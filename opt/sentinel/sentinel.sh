@@ -1,4 +1,9 @@
 #!/bin/bash
 
 cd ${SENTINEL_HOME};
-./venv/bin/python bin/sentinel.py;
+
+if [ ! -f .lock ]; then
+    touch .lock
+    ./venv/bin/python bin/sentinel.py;
+    rm .lock;
+fi
