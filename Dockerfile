@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-ARG syscoinVersion=dev-3.x
-ARG sentinelVersion=HEAD
+ARG syscoinVersion=3.0.5.0
+ARG sentinelVersion=1.1.1
 ARG _walletSourcePath=/usr/local/src/syscoind
 ARG _sentinelSourcePath=/usr/local/src/sentinel
 ARG _sentinelBin=/opt/sentinel/sentinel.sh
@@ -65,7 +65,7 @@ RUN mkdir ${_sentinelSourcePath} && \
 
 VOLUME /data
 
-EXPOSE 18369
+EXPOSE 8369
 
 ENTRYPOINT ["docker-entry"]
 
