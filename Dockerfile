@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-ARG syscoinVersion=3.0.5.0
+ARG syscoinVersion=3.1.0.0
 ARG sentinelVersion=1.1.1
 ARG _walletSourcePath=/usr/local/src/syscoind
 ARG _sentinelSourcePath=/usr/local/src/sentinel
