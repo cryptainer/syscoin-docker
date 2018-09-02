@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ARG syscoinVersion=3.1.0.0
 ARG sentinelVersion=1.1.1
