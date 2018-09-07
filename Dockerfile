@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ARG syscoinVersion=3.1.0.0
+ARG syscoinVersion=3.1.2.0
 ARG sentinelVersion=1.1.1
 ARG _walletSourcePath=/usr/local/src/syscoind
 ARG _sentinelSourcePath=/usr/local/src/sentinel
